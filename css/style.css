@@ -1,0 +1,451 @@
+    * {
+    margin: 0;
+    padding: 0;
+    font-family: sans-serif;
+}
+
+body {
+    font-size: 20px;
+}
+
+/* -----Navigation----*/
+.navbar {
+    position: sticky;
+    top: 0;
+    z-index: 10;
+}
+
+.navbar-brand img {
+    height: 100px;
+    float: left;
+    margin-top: 10px;
+    padding-left: 20px;
+}
+
+.navbar-nav li {
+    padding: 0 10px;
+}
+
+.navbar-nav li a {
+    float: right;
+    text-align: left;
+}
+
+#navbarNav ul li a:hover {
+    color: skyblue !important;
+}
+
+.navbar {
+    background-color: white;
+}
+
+.navbar-toggler {
+    border: none;
+}
+
+.nav-link {
+    color: #555;
+    font-weight: 600;
+    font-size: 20px;
+}
+
+/*-----------about us ----------*/
+
+#about, #value, #services-offer{
+    padding: 20px;
+    color: #555;
+}
+
+#about h1, #contact h1, #industry h1, #services-offer h1, #hr-services h1, #requirements h1{
+    text-align: center;
+    margin-top: 30px;
+    margin-bottom: 20px;
+    text-transform: uppercase;
+}
+
+#about h1::after, #contact h1::after, #services-offer h1::after, #hr-services h1::after{
+    content: '';
+    display: block;
+    height: 3px;
+    width: 140px;
+    margin: 20px auto 0;
+    background:#007bff;
+}
+
+.about-content, #value .value-left, #value .value-left{
+    margin-top: 20px;
+    padding: 10px;
+    letter-spacing: 1px;
+    word-spacing: 2px;
+}
+
+#about btn {
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+
+#about h3{
+    margin-top: 50px;
+    font-weight: bold;
+}
+
+#about .about-right img{
+    width: 100%;
+    height: 100%;
+}
+
+/* -----------Mission------------ */
+#mission {
+    padding: 20px;
+    margin: 0;  
+    background-color: #efefef; 
+}
+#mission .mission-content{
+    text-align: center;
+    padding-top: 5px;
+    padding-bottom: 5px;
+    margin: 10px 10px;
+}
+
+#mission .mission-content .headline h3{
+    font-size: 170%;
+    color: #555 !important;
+    padding-bottom: 5px;
+}
+
+#mission .mission-content .headline h3::after{
+    content: '';
+    background: #007bff;
+    height: 2px;
+    width: 110px;
+    margin: 10px auto 5px;
+    display: block;
+}
+
+#mission .mission-content .description{
+    color: #555;
+    font-size: 90%;
+}
+
+
+/*------------Services---------------*/
+
+
+#expertise, #differentiators, #requirements, #industry{
+    margin-bottom: 10px;
+    /* margin-top: 10px; */
+    padding-bottom: 50px;
+    padding-top: 50px;
+    background-image: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url(../images/expertise-back.jpg);
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+    color: #efefef;
+}
+
+#expertise h1 , #differentiators h1{ 
+    text-align: center;
+    padding-bottom: 10px;
+    padding-top: 10px;
+    color: #efefef !important;
+    text-transform: uppercase;
+}
+
+#expertise h1::after {
+    content: '';
+    background: #efefef;
+    height: 3px;
+    width: 240px;
+    margin: 20px auto 5px;
+    display: block;
+}
+
+.expertise {
+    margin-top: 20px;
+}
+
+.icon {
+    margin: 20px auto;
+    padding: 10px;
+    border-radius: 50%;
+    align-self: center;
+    -webkit-border-radius: 50%;
+    -moz-border-radius: 50%;
+    -ms-border-radius: 50%;
+    -o-border-radius: 50%;
+}
+
+#expertise p {
+    font-size: 14px;
+    margin-top: 20px;
+    color: #ccc;
+
+}
+
+#expertise .col-md-3:hover, #differentiators .col-md-3:hover{
+    background: #007bff;
+    cursor: pointer;
+    transition: 0.7s;
+    color: #fff;
+}
+
+#expertise .icon img{
+    width: 100px;
+    height: 100px;
+}
+
+.expertise h3, #differentiators h3{
+    font-size: 120%;
+    font-weight: 600;
+}
+
+/* ----------Approach------- */
+#approach{
+    padding-top: 50px;
+    padding-bottom: 50px;
+}
+#approach h1, #value h1{
+    text-align: center;
+    margin-top: 30px;
+    margin-bottom: 20px;
+    text-transform: uppercase;
+    color: #555;
+}
+#approach h1::after, #value h1::after{
+    content: '';
+    display: block;
+    height: 3px;
+    width: 200px;
+    margin: 20px auto 0;
+    background:#007bff;
+}
+
+#approach .approach-left ul{
+    list-style: none;
+    margin-top: 20px;
+}
+#approach .approach-left {
+    padding: 10px;
+}
+#approach .approach-left ul li{
+    word-spacing: 2px;
+}
+#approach .approach-right img{
+    width: 100%;
+    height: auto;
+}
+
+.fa-arrow-circle-right{
+    color: #007bff;
+    font-size: 120%;
+}
+
+
+
+/* ---------Differentiators--------------*/
+#differentiators{
+    background-image: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url(../images/differentiators-back.jpg);
+}
+
+.fa-hands-helping, #differentiators .fa-user-lock, .fa-hands, .fa-ad{
+    font-size: 230%;
+    margin: 10px;
+    font-weight: bold;
+}
+
+#differentiators .icon{
+    height: 95px;
+    width: 95px;
+    margin: 20px auto;
+    padding: 10px;
+    border-radius: 50%;
+    border: 2px solid #fff;
+    align-self: center;
+}
+
+#differentiators h1::after, #requirements h1::after,  #industry h1::after{
+    content: '';
+    background: #efefef;
+    height: 3px;
+    width: 260px;
+    margin: 20px auto 5px;
+    display: block;
+}
+
+blockquote{
+    font-size: 80%;
+    line-height: 25px;
+}
+
+blockquote::before{
+    content: open-quote;
+    position: relative;
+    color: #007bff;
+    font-size: 50px;
+    bottom: -15px;
+    line-height: 20px;
+    right: 5px;
+    display: inline;
+}
+
+blockquote::after{
+    content: close-quote;
+    position: relative;
+    color: #007bff;
+    font-size: 50px;
+    bottom: -20px;
+    line-height: 1px;
+    left: 5px;
+}
+
+#differentiators .quote{
+    margin-top: 40px;
+    font-size: 140%;
+    font-weight: 600;
+}
+
+/* ------------Value----------- */
+
+#value h1::after{
+    width: 140px;
+}
+#value .value-left{
+    text-align: justify;
+}
+
+#value .value-right img{
+    width: 100%;
+}
+
+/*-------Get In Touch--------*/
+
+#contact{
+    padding-top: 40px;
+    padding-bottom: 40px;
+    background-color: #efefef;
+    color: #777;
+} 
+
+#contact .contact-info .follow ul{
+    list-style: none;
+    padding-left: 10px;
+}
+
+::placeholder{
+    color: #999 !important;
+}
+
+.follow{
+    padding: 10px;
+    margin: 10px;
+    background: #fff;
+}
+
+#contact .font-a{
+    color: #007bff;
+    font-weight: bold;
+    margin: 0 10px;
+}
+
+#contact h1::after{
+    width: 160px;
+}
+/*----Footer-----*/
+
+.footer{
+    background: #333;
+    padding: 15px;
+    color: #fff;
+}
+
+.fa-heart{
+    color: red;
+    font-weight: bold;
+    margin: 3px;
+}
+
+
+/* ---------Services------------ */
+#services-header img{
+    width: 100%;
+    height: 80%;
+}
+/* -------INDUSTRY VERTICALS --------- */
+#industry h1::after{
+    width: 450px;
+}
+#industry{
+    background-image: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url(../images/industry-back.jpg);
+}
+
+.sectors{
+    padding: 5px;
+    margin: 10px auto;
+}
+ .sectors ul{
+    list-style: none;
+}
+.sectors ul li{
+    margin-top: 10px;
+}
+
+/* ----------HR services---------- */
+#hr-services{
+    margin-bottom: 20px;
+    margin-top: 20px;
+    color: #555;
+    padding: 20px;
+}
+
+/* ---------Services-offer -------------*/
+#services-offer{
+    margin-bottom: 20px;
+    margin-top: 20px;
+}
+#services-offer h1::after{
+    width: 260px;
+}
+.service{
+    padding: 10px;
+    text-align: center;
+}
+
+ .service:hover{
+    box-shadow: 0 0 15px 5px rgba(0,0,0,0.2);
+    cursor: pointer;
+    transition: 0.5s;
+    -webkit-transition: 0.5s;
+    -moz-transition: 0.5s;
+    -ms-transition: 0.5s;
+    -o-transition: 0.5s;
+}
+
+.service img{
+    width: 120px;
+    height: 120px;
+    padding: 0;
+}
+.service h3{
+    font-size: 110%;
+    font-weight: 500;
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+.service ol{
+    list-style-type: upper-roman;
+}
+/* -------------requitements ----------- */
+#requirements{
+    background-image: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url(../images/Recruitment\ 2.jpg);
+    margin-bottom: 0;
+}
+#requirements h1::after{
+    width: 500px;
+}
+
+
+
+
+
+
+
